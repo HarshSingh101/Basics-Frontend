@@ -1,0 +1,75 @@
+body {
+    font-family: Arial;
+    background-color: rgb(228, 243, 238); 
+    margin: 0;
+    padding: 0;
+}
+#schoolTitle {
+    text-align: center;
+    margin: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: antiquewhite;
+}
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#schoolInfo {
+    width: 60%;
+}
+
+#schoolContacts {
+    width: 35%;
+}
+.student_section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.student_selector {
+    width: 45%;
+}
+
+.student_selector label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.student_selector select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fbf4f4;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.student_selector select:hover {
+    border-color: #2c3e50;
+}
+.student_display {
+    width: 50%;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+.student_display:hover {
+    background-color: lightgrey;
+}
