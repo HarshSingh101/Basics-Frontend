@@ -1,0 +1,147 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  height: 100%;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Background container (same for login & signup) */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Form box */
+.form-box {
+  background: #ffffffee;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Inputs */
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box input:focus {
+  border: 1px solid #0072ff;
+  box-shadow: 0 0 5px rgba(0, 114, 255, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00c6a9, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-box button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6a9);
+  transform: scale(1.02);
+}
+
+/* Links */
+.form-box .link {
+  color: #0072ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.form-box .link:hover {
+  color: #0056cc;
+}
+
+/* Thank You Page */
+.thank-you {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  text-align: center;
+}
+
+.thank-you h1 {
+  font-size: 4rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  animation: fadeInScale 0.8s ease-in-out;
+}
+
+/* Logout Button */
+.logout-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: crimson;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+/* Animation */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
